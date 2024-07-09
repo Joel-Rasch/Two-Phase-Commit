@@ -1,0 +1,4 @@
+Flask  
+psycopg
+psycopg-binary
+kazoo
