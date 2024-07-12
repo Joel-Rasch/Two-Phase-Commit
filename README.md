@@ -10,9 +10,9 @@ You can transfer money from one iban to another there are various checks like un
 
 All commits are distributed to all connected databases
 
-
-To start download the Repo
-go to the folder where the files are and open powershell or bash
-now run 'docker-compose up --build'
-to build the Docker image
-in your Browser open 127.0.0.1:5000 to open the Frontend of this example
+## How to use
+-To start download the Repo
+- go to the folder where the files are and open powershell or bash
+- now run 'docker-compose up --build'
+- to build the Docker image
+- in your Browser open 127.0.0.1:5000 to open the Frontend of this example
