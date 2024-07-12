@@ -4,6 +4,7 @@ CREATE TABLE accounts (
     id_number VARCHAR(20) UNIQUE,  
     iban VARCHAR(34) UNIQUE,  
     balance DECIMAL(10, 2) DEFAULT 0.0  
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
 );  
   
 CREATE TABLE transactions (  
