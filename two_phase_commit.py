@@ -29,6 +29,7 @@ class TwoPhaseCommit:
 # creates a transcation node for each transaction and each node in ZooKeeper
     def create_transaction(self, root_name, transaction_name, queries):
         try:
+            self.zk.ensure_path(f'{root_name}')
             transaction_id = len(self.zk.get_children(f'{root_name}'))
             transaction_path = self.zk.create(f'{root_name}/{transaction_name}_{transaction_id}', b'NEW')
             queries_path = self.zk.create(f'{transaction_path}/queries')
