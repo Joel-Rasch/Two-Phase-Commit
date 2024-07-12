@@ -16,7 +16,6 @@ DB_CONFIGS = [
 
 tpc = TwoPhaseCommit(ZK_HOSTS, DB_CONFIGS)
 
-
 def createOpenAccountQuery(name, id_number, iban,money):
     query = f"""
     DO $$
@@ -62,7 +61,7 @@ def createTransferQuery(RemitterIBAN, ReceiverIBAN, amount):
 def index():
     return render_template('index.html')
 
-
+#Routing of Post request from frontend to create account
 @app.route('/create_account', methods=['POST'])
 def create_account():
     try:
@@ -86,7 +85,7 @@ def create_account():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
+#Routing of Post request from frontend to perform transaction
 @app.route('/perform_transaction', methods=['POST'])
 def perform_transaction():
     try:
