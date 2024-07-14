@@ -3,7 +3,7 @@ CREATE TABLE accounts (
     name VARCHAR(100),  
     id_number VARCHAR(20) UNIQUE,  
     iban VARCHAR(34) UNIQUE,  
-    balance DECIMAL(10, 2) DEFAULT 0.0  
+    balance DECIMAL(10, 2) DEFAULT 0.0,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
 );  
   
