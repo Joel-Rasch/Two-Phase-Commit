@@ -11,7 +11,8 @@ You can transfer money from one iban to another there are various checks like un
 All commits are distributed to all connected databases
 
 ## How to use
--To start download the Repo
+- To start download the Repo
+- Start Docker
 - go to the folder where the files are and open powershell or bash
 - now run 'docker-compose up --build'
 - to build the Docker image
