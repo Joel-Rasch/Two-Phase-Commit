@@ -11,9 +11,9 @@ CORS(app)  # Enable CORS for all routes
   
 # Configuration  
 DB_CONFIGS = [  
-    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres1', 'port': '5432'},  
-    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres2', 'port': '5432'},  
-    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres3', 'port': '5432'}  
+    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres1', 'port': '5437'},  
+    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres2', 'port': '5438'},  
+    {'dbname': 'db', 'user': 'user', 'password': 'password', 'host': 'postgres3', 'port': '5439'}  
 ]  
 db_enabled = [True, True, True]  # Global variable to keep track of enabled databases  
   
