@@ -2,3 +2,4 @@ Flask
 psycopg
 psycopg-binary
 kazoo
+Flask-Cors
